@@ -147,7 +147,7 @@ Route::prefix('/')->group(function () {
 });
 Route::post('/comment', [CommentController::class, 'store'])->name('comment');
 Route::post('/commentUpdate', [CommentController::class, 'update'])->name('comment.update');
-// // Search ---------------------------------------------------------------------------
+// Search ---------------------------------------------------------------------------
 Route::post('/search', [TinController::class, 'timKiem'])->name('timkiem');
 // Comments ----------------------------------------------------------------------------
 Route::put('/comments/{comment}', [CommentController::class, 'update'])->name('comments.update');
