@@ -149,6 +149,7 @@ Route::post('/comment', [CommentController::class, 'store'])->name('comment');
 Route::post('/commentUpdate', [CommentController::class, 'update'])->name('comment.update');
 // // Search ---------------------------------------------------------------------------
 Route::post('/search', [TinController::class, 'timKiem'])->name('timkiem');
+// Comments ----------------------------------------------------------------------------
 Route::put('/comments/{comment}', [CommentController::class, 'update'])->name('comments.update');
 Route::get('/delete/{id}', [CommentController::class, 'delete'])->name('admin.comment.delete');
 Route::post('/comments/{id}/reply', [CommentController::class, 'reply'])->name('comments.reply');
